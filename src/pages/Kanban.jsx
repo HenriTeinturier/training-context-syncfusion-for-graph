@@ -10,15 +10,14 @@ const Kanban = () => {
       <Header category="App" title="Kanban" />
       <KanbanComponent
       id="kanban"
-          dataSource={kanbanData}
-          cardSettings={{ contentField: 'Summary', headerField: 'Id'}}
-          keyField="Status"
-      >
+      keyField="Status"
+      dataSource={kanbanData}
+      cardSettings={{ contentField: 'Summary', headerField: 'Id' }}
+    >
         <ColumnsDirective>
-          {kanbanGrid.map((item, index) =>
-            <ColumnDirective key={index} {...item}
-            />)}
-        </ColumnsDirective>
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+        {kanbanGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
+      </ColumnsDirective>
       </KanbanComponent>
     </div>
   )
