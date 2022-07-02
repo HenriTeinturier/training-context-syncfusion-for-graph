@@ -4,16 +4,20 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping,Line } from './pages';
+import { Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping,Line } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
+
 import './App.css';
+
+
 
 
 const App = () => {
   const { activeMenu, themeSettings, setThemeSettings, currentColor, currentMode, setCurrentMode, setCurrentColor } = useStateContext();
   
+  // useEffect to retrieve theming information from the localStorage
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
     const currentThemeMode = localStorage.getItem('themeMode');
@@ -25,9 +29,14 @@ const App = () => {
 
 
   return (
+    // Wrapper for Dark/light Mode
     <div className={currentMode === 'Light' ? 'light' : 'dark'}>
       <BrowserRouter>
+
+        {/* wrapper Pages */}
         <div className="flex relative dark:bg-main-dark-bg">
+
+          {/* Config theme Button right bottom  */}
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
               content="settings"
@@ -43,6 +52,8 @@ const App = () => {
               </button>
             </TooltipComponent>
           </div>
+
+          {/* Display or not SideBar Menu ---- w-0 to not display sidebar  */}
           {
             activeMenu ? (
               <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
@@ -54,6 +65,8 @@ const App = () => {
               </div>  
             )
           }
+
+          {/* Wrapper Routes Pages include Navbar and RightSideBar config theme */}
           <div className={
             `dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? ' md:ml-72' : 'flex-2'}`
             }>
@@ -61,6 +74,7 @@ const App = () => {
               <Navbar />
             </div>
             <div>
+              {/* RightSideBar Config Theme */}
               {
                 themeSettings && (
                   <ThemeSettings />
@@ -68,12 +82,8 @@ const App = () => {
               }
               <Routes>
                 {/* Dashboard */}
-                <Route path="/" element={<Ecommerce />} />
-                <Route path="/ecommerce" element={<Ecommerce />} />
-
-                
-
-
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/dashboard" element={<Dashboard />} />
 
                 {/* Charts Tuto SyncFusion */}
                 <Route path="/line" element={<Line />} />

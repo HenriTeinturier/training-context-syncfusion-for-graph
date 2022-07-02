@@ -10,6 +10,8 @@ import { useStateContext } from '../contexts/ContextProvider';
 const Sidebar = () => {
   const { activeMenu, setActiveMenu, screenSize, currentColor } = useStateContext();
 
+
+  // Function to decide if sideBarMenu is open or not depending on screen size.
   const handleCloseSideBar = () => {
     if(activeMenu && screenSize <= 900) {
       setActiveMenu(false);

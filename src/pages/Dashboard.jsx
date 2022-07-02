@@ -1,12 +1,11 @@
 import React from 'react'
-import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-import  { Stacked, Pie, Button, SparkLine } from '../components';
-import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import  { Stacked, Button, SparkLine } from '../components';
+import { earningData, SparklineAreaData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
-const Ecommerce = () => {
+const Dashboard = () => {
   const { currentColor } = useStateContext();
   return (
     <div className="mt-12">
@@ -134,4 +133,4 @@ const Ecommerce = () => {
   )
 }
 
-export default Ecommerce
+export default Dashboard
