@@ -23,6 +23,82 @@ import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
 
+export const links = [
+  {
+    title: 'Dashboard',
+    links: [
+      {
+        name: 'ecommerce',
+        icon: <FiShoppingBag />,
+      },
+    ],
+  },  
+  {
+    title: 'Tuto Charts SyncFusion',
+    links: [
+      {
+        name: 'line',
+        icon: <AiOutlineStock />,
+      },
+      {
+        name: 'area',
+        icon: <AiOutlineAreaChart />,
+      },
+
+      {
+        name: 'bar',
+        icon: <AiOutlineBarChart />,
+      },
+      {
+        name: 'pie',
+        icon: <FiPieChart />,
+      },
+      {
+        name: 'financial',
+        icon: <RiStockLine />,
+      },
+      {
+        name: 'color-mapping',
+        icon: <BsBarChart />,
+      },
+      {
+        name: 'pyramid',
+        icon: <GiLouvrePyramid />,
+      },
+      {
+        name: 'stacked',
+        icon: <AiOutlineBarChart />,
+      },
+    ],
+  },
+  {
+    title: 'Tuto App SyncFusion',
+    links: [
+      {
+        name: 'calendar',
+        icon: <AiOutlineCalendar />,
+      },
+    ],
+  },
+  {
+    title: 'TUuto Table SyncFusion',
+    links: [
+      {
+        name: 'orders',
+        icon: <AiOutlineShoppingCart />,
+      },
+      {
+        name: 'employees',
+        icon: <IoMdContacts />,
+      },
+      {
+        name: 'customers',
+        icon: <RiContactsLine />,
+      },
+    ],
+  },
+];
+
 export const gridOrderImage = (props) => (
   <div>
     <img
@@ -469,94 +545,7 @@ export const employeesGrid = [
     textAlign: 'Center' },
 ];
 
-export const links = [
-  {
-    title: 'Dashboard',
-    links: [
-      {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
 
-  {
-    title: 'Pages',
-    links: [
-      {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
-    ],
-  },
-  {
-    title: 'Apps',
-    links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
-    ],
-  },
-];
 
 export const cartData = [
   {
