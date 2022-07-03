@@ -14,7 +14,7 @@ import { clicLogs } from "../data/data";
 }
 
 /**
- *  Nbr consultation et nbr achat  sur un article
+ *  return Nbr consultation et nbr achat  sur un article
  * @param {int} articleId - Id de l'article
  * @return {Array} - résultats trouvés first = nbclic second = achat
  */
