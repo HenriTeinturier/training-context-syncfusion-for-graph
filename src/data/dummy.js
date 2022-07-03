@@ -3,11 +3,13 @@ import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutline
 import { FiShoppingBag, FiPieChart, FiBarChart } from 'react-icons/fi';
 import { BsBarChart, BsBoxSeam } from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
+import { MdOutlineTableChart } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
+import { GoDashboard } from 'react-icons/go';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -24,8 +26,20 @@ import product7 from './product7.jpg';
 // Links on SideBarMenu needed in Component\Sidebar
 export const links = [
   {
-    title: 'NooCo',
+    title: 'Training Graph.Js',
     links: [
+      {
+        name: 'Overview',
+        icon: <GoDashboard />,
+      },
+      {
+        name: 'Charts',
+        icon: <AiOutlineStock />,
+      },
+      {
+        name: 'Table',
+        icon: <MdOutlineTableChart />,
+      },
       
     ],
   },  
@@ -81,7 +95,7 @@ export const links = [
     ],
   },
   {
-    title: 'TUuto Table SyncFusion',
+    title: 'Tuto Table SyncFusion',
     links: [
       {
         name: 'orders',
@@ -100,6 +114,14 @@ export const links = [
 ];
 // Component Theme settings
 export const themeColors = [
+  {
+    name: 'Green-theme',
+    color: '#45DCC3',
+  },
+  {
+    name: 'Purple-theme',
+    color: '#3F00D0',
+  },
   {
     name: 'blue-theme',
     color: '#1A97F5',

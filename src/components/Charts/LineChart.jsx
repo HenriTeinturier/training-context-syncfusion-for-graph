@@ -15,7 +15,7 @@ const LineChart = () => {
       primaryYAxis={LinePrimaryYAxis}
       chartArea={{ border: { width: 0 }}}
       tooltip={{ enable: true }}
-      background={ currentMode === "Dark" ? "#33373E" : "#fff"}
+      background={ currentMode === "Dark" ? "#393F58" : "#fff"}
     >
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
       <SeriesCollectionDirective>

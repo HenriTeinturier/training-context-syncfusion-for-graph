@@ -17,7 +17,7 @@ export const ContextProvider = ({ children }) => {
   const [screenSize, setScreenSize] = useState(undefined);
 
   // states to manage colors and theme
-  const [currentColor, setCurrentColor] = useState('#03C9D7');
+  const [currentColor, setCurrentColor] = useState('#45DCC3');
   const [currentMode, setCurrentMode] = useState('Light')
   const [themeSettings, setThemeSettings] = useState(false)
 

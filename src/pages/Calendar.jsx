@@ -6,13 +6,14 @@ import { Header } from '../components';
 
 const Calendar = () => {
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
         eventSettings={{ dataSource: scheduleData}}
         // beacause our fake data are from 2021
         selectedDate={new Date(2021, 0, 10)}  
+        // background={ currentMode === "Dark" ? "#393F58" : "#fff"}
       >
         <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]} />
       </ScheduleComponent>

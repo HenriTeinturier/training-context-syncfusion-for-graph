@@ -28,7 +28,7 @@ const Financial = () => {
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true, shared: true }}
           crosshair={{ enable: true, lineType: 'Vertical', line: { width: 0 } }}
-          background={currentMode === 'Dark' ? '#33373E' : '#fff'}
+          background={currentMode === 'Dark' ? '#393F58' : '#fff'}
         >
           <Inject services={[HiloSeries, Tooltip, DateTime, Logarithmic, Crosshair, Zoom]} />
           <SeriesCollectionDirective>

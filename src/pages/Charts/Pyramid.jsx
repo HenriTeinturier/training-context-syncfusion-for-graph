@@ -16,7 +16,7 @@ const Pyramid = () => {
           id="pyramid-chart"
           legendSettings={{ background: 'white' }}
           tooltip={{ enable: true }}
-          background={currentMode === 'Dark' ? '#33373E' : '#fff'}
+          background={currentMode === 'Dark' ? '#393F58' : '#fff'}
         >
           <Inject services={[AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationLegend, AccumulationSelection]} />
           <AccumulationSeriesCollectionDirective>

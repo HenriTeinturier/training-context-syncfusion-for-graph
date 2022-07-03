@@ -11,6 +11,7 @@ const Orders = () => {
       <Header category="Page" title="Orders" />
       <GridComponent
         id="gridcomp"
+        height="650px"
         dataSource={ordersData}
         allowPaging
         allowSorting
