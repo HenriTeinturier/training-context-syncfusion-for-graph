@@ -4,49 +4,49 @@ export const products = [
     brand: 'Levis',
     type: 'Jeans',
     article: '501',
-    prix: 99
+    price: 99
   },
   {
     id: 1002,
     brand: 'Levis',
     type: 'Jeans',
     article: '511',
-    prix: 119
+    price: 119
   },
   {
     id: 2001,
     brand: 'Gap',
     type: 'Jeans',
     article: 'Slim natural',
-    prix: 99
+    price: 99
   },
   {
     id: 2002,
     brand: 'Gap',
     type: 'Jeans',
     article: 'Skinny',
-    prix: 119
+    price: 119
   },
   {
     id: 2003,
     brand: 'Gap',
     type: 'Jeans',
     article: 'Droit',
-    prix: 109
+    price: 109
   },
   {
     id: 3001,
     brand: 'Diesel',
     type: 'Jeans',
     article: 'Skinny',
-    prix: 129
+    price: 129
   },
   {
     id: 3002,
     brand: 'Diesel',
     type: 'Jeans',
     article: 'Slim',
-    prix: 139
+    price: 139
   },
 ];
 
@@ -99,7 +99,7 @@ export const clicLogs = [
     userId: 24,
     date: '2021/01/01',
     consultationDuration: 20,
-    lbuyAfterClic: true,
+    buyAfterClic: true,
   },
   {
     articleId: 1002,
