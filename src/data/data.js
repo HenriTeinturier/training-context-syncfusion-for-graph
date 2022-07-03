@@ -1,49 +1,49 @@
 export const products = [
   {
     id: 1001,
-    marque: 'Levis',
+    brand: 'Levis',
     type: 'Jeans',
     article: '501',
     prix: 99
   },
   {
     id: 1002,
-    marque: 'Levis',
+    brand: 'Levis',
     type: 'Jeans',
     article: '511',
     prix: 119
   },
   {
     id: 2001,
-    marque: 'Gap',
+    brand: 'Gap',
     type: 'Jeans',
     article: 'Slim natural',
     prix: 99
   },
   {
     id: 2002,
-    marque: 'Gap',
+    brand: 'Gap',
     type: 'Jeans',
     article: 'Skinny',
     prix: 119
   },
   {
     id: 2003,
-    marque: 'Gap',
+    brand: 'Gap',
     type: 'Jeans',
     article: 'Droit',
     prix: 109
   },
   {
     id: 3001,
-    marque: 'Diesel',
+    brand: 'Diesel',
     type: 'Jeans',
     article: 'Skinny',
     prix: 129
   },
   {
     id: 3002,
-    marque: 'Diesel',
+    brand: 'Diesel',
     type: 'Jeans',
     article: 'Slim',
     prix: 139
@@ -86,9 +86,138 @@ export const visitors = [
     firstname: 'Stéphanie',
     id: 27,
     email: 's.richard99@gmail.com',
-    lastConnexion: '501',
+    lastConnexion: '2020/12/11',
     nbrConnexion: 0,
-    nbrArticleShow: 1,
+    nbrArticleShow: 2,
     hasAlreadyBuy: false,
+  },
+];
+
+export const clicLogs = [
+  {
+    articleId: 1001,
+    userId: 24,
+    date: '2021/01/01',
+    consultationDuration: 20,
+    lbuyAfterClic: true,
+  },
+  {
+    articleId: 1002,
+    userId: 24,
+    date: '2021/01/01',
+    consultationDuration: 25,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2001,
+    userId: 24,
+    date: '2021/01/01',
+    consultationDuration: 22,
+    buyAfterClic: true,
+  },
+  {
+    articleId: 2002,
+    userId: 24,
+    date: '2021/01/01',
+    consultationDuration: 20,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2001,
+    userId: 25,
+    date: '2021/01/04',
+    consultationDuration: 8,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2002,
+    userId: 25,
+    date: '2021/01/04',
+    consultationDuration: 7,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2003,
+    userId: 25,
+    date: '2021/01/04',
+    consultationDuration: 9,
+    buyAfterClic: true,
+  },
+  {
+    articleId: 3001,
+    userId: 25,
+    date: '2021/01/04',
+    consultationDuration: 10,
+    buyAfterClic: true,
+  },
+  {
+    articleId: 3002,
+    userId: 25,
+    date: '2021/01/04',
+    consultationDuration: 7,
+    buyAfterClic: true,
+  },
+  {
+    articleId: 1001,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 5,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 1002,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 4,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2001,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 5,
+    buyAfterClic: true,
+  },
+  {
+    articleId: 2002,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 5,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 2003,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 4,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 3001,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 3,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 3002,
+    userId: 26,
+    date: '2021/01/03',
+    consultationDuration: 4,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 1001,
+    userId: 27,
+    date: '2020/12/11',
+    consultationDuration: 32,
+    buyAfterClic: false,
+  },
+  {
+    articleId: 1002,
+    userId: 27,
+    date: '2020/12/11',
+    consultationDuration: 27,
+    buyAfterClic: false,
   },
 ];
