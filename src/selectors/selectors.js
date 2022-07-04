@@ -34,6 +34,44 @@ import { clicLogs, products} from "../data/data";
 }
 
 /**
+ *  return les artciles d'un marque avec leurs stats
+ * @param {string} brand - Nom de la marque
+ * @return {Array} 
+ */
+ export function returnArticleAndStatFromBrand(brand) {
+
+  // récupération des produits de la marque
+  let selectedProducts = products.filter((product) => {return product.brand === brand;});
+
+  // Ajout du nombre de vues (clic) au tableau
+  selectedProducts = selectedProducts.map((product) => {
+    let clic = 0;
+    clicLogs.forEach((log) => {
+      if (log.articleId === product.id) {
+        clic ++;
+      }
+    })
+    product.vue = clic;
+    return product;
+  });
+  
+  // Ajout du nombre de vente et C.A de l'article
+  selectedProducts = selectedProducts.map((product) => {
+    let nbrAchat = 0;
+    clicLogs.forEach((log) => {
+      if (log.articleId === product.id) {
+        nbrAchat += log.buyAfterClic
+      }
+    })
+    product.purchase = nbrAchat;
+    product.ca = nbrAchat * product.price;
+    return product;
+  });
+
+  return [selectedProducts];
+}
+
+/**
  *  return le nombre de clic, de consultation moyenne et d'achat pour chaque article d'une marque
  * @param {string} brand - Nom de la marque
  * @return {Array} - tableaux avec quatre tableaux: 0 articleName, 1 clic, 2 duration, 3 purchase
