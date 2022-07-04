@@ -1,4 +1,3 @@
-export { default as Overview } from './Overview';
 export { default as Charts } from './Charts';
 export { default as Table } from './Table';
 export { default as Dashboard } from './Dashboard';

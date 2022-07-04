@@ -9,7 +9,6 @@ import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
-import { GoDashboard } from 'react-icons/go';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -28,10 +27,6 @@ export const links = [
   {
     title: 'Training Graph.Js',
     links: [
-      {
-        name: 'Overview',
-        icon: <GoDashboard />,
-      },
       {
         name: 'Charts',
         icon: <AiOutlineStock />,

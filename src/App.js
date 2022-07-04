@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Sidebar, ThemeSettings } from './components';
-import { Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping, Line, Overview, Charts, Table, TableTest } from './pages';
+import { Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping, Line, Overview, Charts, Table } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -82,10 +82,9 @@ const App = () => {
               }
               <Routes>
                 {/* Home */}
-                <Route path="/" element={<Overview />} />
+                <Route path="/" element={<Charts />} />
 
                 {/* Training Charts For NooCo */}
-                <Route path="/Overview" element={<Overview />} />
                 <Route path="/Charts" element={<Charts />} />
                 <Route path="/Table" element={<Table />} />
 

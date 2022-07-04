@@ -5,8 +5,12 @@
   max-width: 800px;
 }
 
-.test {
-  color: #5725ca;
+.tableWithoutTailwind {
+  background-color: #3F00D0;
+}
+
+.tableWithoutTailwindGreen  {
+  background-color: #45DCC3;
 }
 
 .sidebar {

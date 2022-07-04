@@ -8,17 +8,18 @@ const Table = () => {
   const [products] = returnArticleAndStatFromBrand('Gap');
 
   const { currentColor } = useStateContext();
+  console.log(currentColor)
   let testClassName;
   if ( currentColor === '#3F00D0') {
-    testClassName = `bg-[${currentColor}] text-gray-200 `
-  } else {
-    testClassName = `bg-[${currentColor}]`;
+    testClassName = 'tableWithoutTailwind text-gray-200'
+  } else if ( currentColor === '#45DCC3' ){
+    testClassName = 'tableWithoutTailwindGreen text-gray-200';
   }
 
   return (
     <div className=" m-6 p-2  md:m-10 md:p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="Page" title="Table" />
-      <div className="flex flex-col">
+      <div className="flex flex-col shadow-xl mb-44">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8 ">
             <div className="overflow-hidden">
