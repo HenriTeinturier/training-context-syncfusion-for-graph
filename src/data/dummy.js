@@ -39,8 +39,7 @@ export const links = [
       {
         name: 'Table',
         icon: <MdOutlineTableChart />,
-      },
-      
+      },     
     ],
   },  
   {
