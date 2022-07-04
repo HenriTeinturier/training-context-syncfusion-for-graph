@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Sidebar, ThemeSettings } from './components';
-import { Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping, Line, Overview, Charts, Table } from './pages';
+import { Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers,Area, Bar, Pie, Financial, ColorMapping, Line, Charts, Table } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
