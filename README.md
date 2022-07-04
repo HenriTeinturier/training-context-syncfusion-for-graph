@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Entraînement avec GraphJs et syncFusion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce "projet" est le résultat d'un petit test technique sur l'utilisation de Graphs.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Ce projet est inspiré d'un tutoriel de JavaScript Mastery sur l'utilisation de SyncFusion qui met à disposition sous forme de composants notamment divers sortes de graphiques.
+J'ai adapté complètement le code afin de l'adapter à ce que je souhaitais obtenir.
 
-### `npm start`
+Je me suis ensuite servi de cette base pour créer de nouvelles pages afin de réaliser des graphiques et un tableau. Cette fois-ci, je suis partie d'une page blanche et j'ai utilisé ChartJs après avoir lu la documentation de cette librairie.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pourquoi me suis-je appuyé sur ce tutoriel?
+Tout d'abord, cela me faisait une bonne introduction à l'utilisation de graphiques puisque je n'en avais jamais fait.  
+Ensuite ce tutorial basait son style sur la librairie **Tailwind**. Ne l'ayant jamais utilisé je me suis dit que ce serait une bonne occasion. **Je préfère partir from scratch** pour le style mais je suis agréablement surpris par cette librairie: Des noms de classes très clair et très facilement adaptable. Je préfère tout de même partir from scratch car je trouve que cela rend le code beaucoup plus clair malgré tout (côté HTML).  
+Surtout, **ce tutoriel utilisait useContext** que je n'avais jamais utilisé et que je souhaitais découvrir. **Je suis plus à l'aise avec Redux-Store car nous l'avons largement pratiqué pendant ma spécialisation**. J'ai pu constater que le principe reste le même, même si dans cet exemple nous ne l'associons pas à useReducer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `déploiement et installation`
 
-### `npm test`
+Pour installer le projet:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```console
+npm install
+```
 
-### `npm run build`
+Pour lancer le projet:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```console
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+adresse de déploiement [www.graphs.henriteinturier.fr](http://www.graphs.henriteinturier.fr/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `organisation du projet`
 
-### `npm run eject`
+`App.js` est notre page principale. C'est la page qui intègre la majorité de nos routes. (Pour info je n'ai pas créé de page 404).  
+`Composants:` Nos Composants sont séparés dans deux dossiers. Les Composants représentants une page complète sont dans le répertoire "pages". Les Composants partiel (SideBar, Header, ...) sont dans le repertoire "components".  
+`Data:` Les data se trouvent dans le répertoire data. Dummy.js contient les datas pour les graphs crées avec synFusion. data.js contient les datas fournies pour le test technique.  
+`selectors:` Le fichier selectors.js contient les différentes fonctions que j'ai créé pour récupérer les donnes dont on a besoin pour créer les graphiques avec chartJs ainsi que pour le tableau de l'exercice technique.  
+`Tests:` Je n'ai pas intégré de tests dans ce petit projet mais nous avons abordé Jest pendant ma formation. J'ai bien conscience que les tests sont très utiles et je compte me former plus profondément sur ces tests prochainement.  
+`components/index.jsx pages/Index.jsx` répertorient l'ensemble des composants et pages ce qui permet de les importer plus facilement lorsque c'est nécessaire.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## `Aperçu`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](./apercu.png)
